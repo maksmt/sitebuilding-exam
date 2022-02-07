@@ -105,8 +105,8 @@ header {
             font-family: "Spline Sans", sans-serif;
             font-size: 41px;
             word-spacing: 1.2px;
-            left: 0;
-            margin: 173px 0 0 140px;
+            margin-left: 0px;
+            margin: 173px 0 0 -590px;
             .field--type-text-with-summary {
                 font-size: 41px;
             }
@@ -119,6 +119,10 @@ header {
         word-spacing: -0.3px;
         font-family: "Spline Sans", sans-serif;
         font-weight: 300;
+        position: absolute;
+        margin-top: -10px;
+        margin-left: -10px;
+        white-space: nowrap;
         p {
             position: absolute;
             top: 217px;
@@ -139,15 +143,16 @@ header {
     }
 
     .social-media-links--platforms {
+        display: flex;
+        justify-content: flex-end;
         position: absolute;
-        top: 0;
-        right: 230px;
-        margin: -80px 0 0 0px;
+        margin: -83px 0 0 885px;
         @include social_links;
         padding: 7px 8px;
     }
     #search-block-form {
         margin: 76px 0 0 -231px;
+        padding-right: 200px;
         .form-search {
             position: absolute;
             height: 34px;
@@ -158,14 +163,13 @@ header {
             border: 1px #cdcdcd solid;
         }
         .button {
-            top: 0;
             background: url(../images/search.png) no-repeat;
             background-size: contain;
             position: absolute;
             height: 35px;
             font-size: 0;
             width: 40px;
-            margin: 0px 0 0 -40px;
+            margin: 0px 0 0 172px;
         }
     }
 }

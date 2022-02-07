@@ -138,35 +138,37 @@ body {
             min-height: 200px;
             display: flex;
             flex-direction: column;
-            // justify-content: center;
-            // align-content: center;
             padding-left: 120px;
             p {
                 margin-left: -80px;
                 span {
                     display: flex;
-                    // width: 600px;
                     justify-content: center;
                     margin: 10px 0 0 30px;
                 }
             }
             span {
                 display: flex;
-                // width: 800px;
                 margin: 20px 0 0 100px;
             }
             a {
-                position: absolute;
                 top: 140px;
                 left: 37%;
                 margin: 150px 0 0 300px;
             }
         }
     }
-    #search-block-form {
-        input {
-            margin-left: -100px;
-        }
+    .navbar-nav {
+        width: 800px;
+    }
+    .search-block-form {
+        margin-left: -100px;
+    }
+    .view-our-team {
+        margin-left: 20px;
+    }
+    .social-media-links--platforms {
+        margin: -23px 0 0 885px;
     }
 }
 
@@ -197,12 +199,19 @@ body {
         }
     }
     .view-news {
+        min-height: 700px;
         .views-row {
             display: flex;
             flex-direction: column;
             flex-wrap: wrap;
             justify-content: center;
             align-items: center;
+            margin-left: -100px;
+        }
+        .views-col {
+            &:last-child {
+                margin-top: 30px;
+            }
         }
     }
     .view-our-team {
