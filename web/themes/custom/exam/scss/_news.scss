@@ -1,0 +1,80 @@
+@import "mixins";
+.view-news {
+    padding-top: 40px;
+    background: repeating-linear-gradient(135deg, rgba(0, 0, 0, 0.1), #fff 3px, #fff 10px, #fff 0px);
+    height: 432px;
+    overflow-x: hidden;
+
+    h2 {
+        display: none;
+    }
+    .view-content {
+        width: 1250px;
+    }
+    .view-row {
+        width: 610px;
+    }
+
+    .views-field {
+        background-color: #fff;
+        width: 610px;
+    }
+    .views-field-title {
+        display: none;
+    }
+    .img-fluid {
+        border-left: 1px solid #cdcdcd;
+        padding-left: 30px;
+        width: 108px;
+    }
+    .views-field-field-news-image {
+        margin: -20px 0 0 85px;
+        width: 100px;
+    }
+    .views-field-field-news-titlw {
+        text-transform: uppercase;
+        color: #343343;
+        padding: 0 0 20px 30px;
+        border-left: 1px solid #cdcdcd;
+    }
+    .views-field-field-news-text {
+        font-family: "Spline Sans";
+        color: #282828;
+        text-transform: uppercase;
+        font-size: 12px;
+        line-height: 15px;
+        word-spacing: -0.2px;
+        letter-spacing: -0.5px;
+        width: 525px;
+        word-break: break-all;
+        border-left: 1px solid #cdcdcd;
+        padding-left: 19px;
+        margin: 18px 0 0 85px;
+    }
+
+    .views-field-field-news-more {
+        display: flex;
+        justify-content: flex-end;
+        padding-right: 21px;
+        @include link_button;
+        margin: 40px 0 0 0;
+        a {
+            background-color: #343343;
+            padding: 6px 5px;
+            font-size: 14px;
+        }
+        padding-bottom: 30px;
+    }
+    .views-field-field-news-date {
+        position: absolute;
+    }
+    .views-field-field-news-date {
+        display: flex;
+        width: 300px;
+        flex-direction: column;
+    }
+    .views-field-field-date-ago {
+        margin: 0 0 0 300px;
+        width: 300px;
+    }
+}

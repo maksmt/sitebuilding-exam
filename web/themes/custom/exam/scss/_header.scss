@@ -1,0 +1,171 @@
+@import "mixins";
+header {
+    background-image: url(../images/header.png);
+    height: 700px;
+    background-position: center;
+    // background-position-y: top;
+    background-repeat: no-repeat;
+    .page-header {
+        border-bottom: none;
+    }
+    .navbar-toggler {
+        display: none;
+    }
+    .region-nav-main {
+        height: 530px;
+    }
+
+    h2 {
+        display: flex;
+        justify-content: center;
+        a {
+            display: none;
+        }
+    }
+    .field--type-text-with-summary {
+        margin: 30px 0 0 200px;
+        text-transform: uppercase;
+        &:first-child {
+            font-size: 90px;
+        }
+    }
+    .navbar-brand {
+        position: absolute;
+        margin: 65px 0 0 15px;
+
+        img {
+            height: 30px;
+            width: 165px;
+        }
+    }
+    .navbar-nav {
+        list-style: none;
+        display: flex;
+        width: 1000px;
+        height: 115px;
+        background: #ffffff;
+        margin: 40px 0 0 255px;
+        padding: 2px 0 0 60px;
+        font-family: "Spline Sans", sans-serif;
+
+        .nav-item {
+            font-size: 14px;
+            margin: 50px 0 0 13px;
+            text-decoration: none;
+            height: 17px;
+            width: auto;
+            color: #343343;
+            text-transform: uppercase;
+            padding-bottom: 56px;
+        }
+        li {
+            &:hover {
+                border-bottom: 7px solid #6e9ccb;
+            }
+
+            &:first-child {
+                width: 29px;
+                margin: 40px 0 0 -30px;
+                padding-bottom: 66px;
+                background: url(../images/Homepage-menu.png) no-repeat;
+                a {
+                    font-size: 0;
+                }
+            }
+        }
+    }
+    .navbar-collapse {
+        display: flex;
+    }
+    .site-logo {
+        background: #343343;
+        padding: 24px 40px 74px 35px;
+    }
+    .site-slogan {
+        color: #a3a2aa;
+        margin: 8px 0 0 37px;
+    }
+
+    #block-header-text {
+        position: absolute;
+        font-size: 70px;
+        color: #ffffff;
+        font-family: "Spline Sans", sans-serif;
+        font-weight: 300;
+        letter-spacing: -1.5px;
+        margin: 108px 0 0 -65px;
+        .field--type-text-with-summary {
+            font-size: 70px;
+        }
+    }
+    #block-header-text2 {
+        p {
+            position: absolute;
+            color: #343343;
+            font-family: "Spline Sans", sans-serif;
+            font-size: 41px;
+            word-spacing: 1.2px;
+            left: 0;
+            margin: 173px 0 0 140px;
+            .field--type-text-with-summary {
+                font-size: 41px;
+            }
+        }
+    }
+
+    #block-header-text3 {
+        font-size: 14px;
+        color: #6f9dcc;
+        word-spacing: -0.3px;
+        font-family: "Spline Sans", sans-serif;
+        font-weight: 300;
+        p {
+            position: absolute;
+            top: 217px;
+            left: 145px;
+            // margin: 217px 0 0 255px;
+
+            margin-top: 10px;
+            word-spacing: 2px;
+            &:last-child {
+                margin-top: 30px;
+            }
+        }
+        .field--type-text-with-summary {
+            display: flex;
+            flex-direction: column;
+            font-size: 14px;
+        }
+    }
+
+    .social-media-links--platforms {
+        position: absolute;
+        top: 0;
+        right: 230px;
+        margin: -80px 0 0 0px;
+        @include social_links;
+        padding: 7px 8px;
+    }
+    #search-block-form {
+        margin: 76px 0 0 -231px;
+        .form-search {
+            position: absolute;
+            height: 34px;
+            width: 210px;
+        }
+        input {
+            position: absolute;
+            border: 1px #cdcdcd solid;
+        }
+        .button {
+            top: 0;
+            background: url(../images/search.png) no-repeat;
+            background-size: contain;
+            position: absolute;
+            height: 35px;
+            font-size: 0;
+            width: 40px;
+            margin: 0px 0 0 -40px;
+        }
+    }
+}

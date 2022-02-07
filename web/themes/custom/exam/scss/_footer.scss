@@ -1,0 +1,30 @@
+@import "mixins";
+footer {
+    background: #343343;
+    height: 196px;
+    overflow: hidden;
+    h2 {
+        display: none;
+    }
+    .social-media-links--platforms {
+        display: flex;
+        justify-content: flex-end;
+        @include social_links;
+        margin: -46px 0 0 30px;
+    }
+    .site-slogan {
+        color: #cbcace;
+        margin: 6px 0 0 10px;
+        white-space: nowrap;
+    }
+    .navbar-brand {
+        img {
+            width: 176px;
+            margin: 81px 0 0 10px;
+        }
+        overflow: hidden;
+    }
+    .node__meta {
+        display: none;
+    }
+}

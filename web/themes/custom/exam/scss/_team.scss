@@ -1,0 +1,73 @@
+@import "mixins";
+.view-our-team {
+    h2 {
+        display: none;
+    }
+
+    .node__content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-top: -66px;
+        img {
+            width: 290px;
+            height: 290px;
+            filter: grayscale(1);
+            &:hover {
+                filter: grayscale(0);
+                cursor: pointer;
+            }
+        }
+    }
+    .field--name-field-team__name {
+        text-transform: uppercase;
+        color: #343343;
+        font-family: "Spline Sans" sans-serif;
+        font-size: 26px;
+        margin-top: 43px;
+        white-space: nowrap;
+    }
+    .field--name-field-team__profession {
+        text-transform: uppercase;
+        font-size: 14px;
+        font-family: "Spline Sans";
+        white-space: nowrap;
+        color: #cdcdcd;
+    }
+    .field--name-field-team__link {
+        @include link_button;
+        padding: 7px -9px;
+        a {
+            background: #343343;
+        }
+        margin-top: 25px;
+        white-space: nowrap;
+    }
+    .social-media-links--platforms {
+        display: flex;
+        @include social_links;
+        margin-top: 30px;
+        margin-right: 109px;
+        white-space: nowrap;
+        li {
+            margin-left: 13px;
+        }
+    }
+    .flag-team-like-like {
+        // font-size: 0;
+        width: 15px;
+        height: 15px;
+        margin: -37px 0 0 183px;
+        background: url(../images/heart.jpg) no-repeat;
+        background-size: contain;
+        a {
+            color: transparent;
+            // font-size: 1px;
+        }
+    }
+    .action-unflag {
+        background: url(../images/read_heart.jpg) no-repeat;
+        background-size: contain;
+    }
+}

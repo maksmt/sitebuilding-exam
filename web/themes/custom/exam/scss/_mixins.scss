@@ -1,0 +1,32 @@
+@mixin social_links {
+    .fa-facebook {
+        background: url(../images/Social/fb.png);
+        color: transparent;
+        height: 26px;
+        width: 26px;
+    }
+    .fa-twitter {
+        background: url(../images/Social/twit.png);
+        color: transparent;
+        height: 26px;
+        width: 26px;
+    }
+    .fa-linkedin {
+        background: url(../images/Social/in.png);
+        color: transparent;
+        height: 26px;
+        width: 26px;
+    }
+}
+@mixin link_button {
+    a {
+        padding: 7px 8px;
+        background: #6e9ccb;
+        text-decoration: none;
+        text-transform: uppercase;
+        color: #fff;
+    }
+}
+@mixin searching{
+    
+}

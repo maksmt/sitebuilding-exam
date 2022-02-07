@@ -1,0 +1,105 @@
+@import "mixins";
+.view-project {
+    background: repeating-linear-gradient(135deg, rgba(0, 0, 0, 0.1), #fff 3px, #fff 10px, #fff 0px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: -75px 0 0 -20px;
+    height: 740px;
+
+    h2 {
+        display: none;
+    }
+
+    .node__content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-left: 30px;
+        margin-top: -130px;
+        width: 288px;
+        height: 472px;
+
+        padding-bottom: 146px;
+        background-color: #fff;
+        border-bottom: 1px solid #343343;
+        &:first-child {
+            margin-left: -30px;
+            top: 0;
+        }
+    }
+    &.col-2 {
+        .node__content {
+            .field--name-field-project__service {
+                a {
+                    color: #fff;
+                }
+            }
+        }
+    }
+    .img-fluid {
+        width: 288px;
+        margin-top: -30px;
+    }
+    .field--name-field-project__name {
+        text-transform: uppercase;
+        font-size: 25px;
+        margin: 422px 0 0 -7px;
+        position: absolute;
+        white-space: nowrap;
+    }
+    .field--name-field-project__details {
+        background: #343343;
+        padding: 7px 30px;
+        width: 73px;
+        margin-top: 565px;
+        position: absolute;
+        white-space: nowrap;
+        a {
+            font-family: "Spline Sans", sans-serif;
+            font-size: 14px;
+            text-transform: uppercase;
+            color: #fff;
+            margin: 40px 0 0 -20px;
+        }
+    }
+    .field--name-field-project__service {
+        text-transform: uppercase;
+        position: absolute;
+        margin-top: 488px;
+        white-space: nowrap;
+        a {
+            &:first-child {
+                color: #21c0a1;
+            }
+            &:nth-child(2) {
+                color: #9c57b6;
+            }
+        }
+        a {
+        }
+    }
+    .pagination {
+        display: flex;
+        a {
+            color: #676767;
+        }
+        li {
+            margin-left: 20px;
+        }
+        .page-item {
+            margin-top: 48px;
+            &.active {
+                margin-top: 42px;
+                border-radius: 50%;
+                background-color: #deddde;
+                padding: 7px 10px;
+            }
+        }
+    }
+    #block-views-block-project-block-1 {
+        width: 100%;
+    }
+}

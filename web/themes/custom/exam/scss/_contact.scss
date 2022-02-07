@@ -1,0 +1,82 @@
+.view-contact-view1 {
+
+    .page-header {
+        text-transform: uppercase;
+        font-size: 40px;
+    }
+    .navbar {
+        display: none;
+    }
+    h2 {
+        // font-size: 0;
+        &::before,
+        &::after {
+            content: "";
+            border: none;
+        }
+    }
+    .address {
+        display: flex;
+        flex-direction: column-reverse;
+        padding-top: 0;
+        &-line2,
+        &-line3 {
+            padding-top: 0px;
+        }
+        .country {
+            font-size: 20px;
+            font-weight: 300;
+        }
+    }
+    form {
+        label {
+            display: none;
+        }
+        input {
+            width: 462px;
+            height: 55px;
+            border-radius: 2px;
+
+            margin-right: 0;
+            border: 1px solid #d8d8d8;
+            padding-left: 10px;
+            color: #ababab;
+            text-transform: uppercase;
+            margin-top: -5px;
+        }
+        textarea {
+            width: 462px;
+            height: 200px;
+            padding: 15px 0 0 10px;
+            color: #ababab;
+            text-transform: uppercase;
+            border-radius: 2px;
+            border: 1px solid #d8d8d8;
+            margin-top: -5px;
+        }
+        .button {
+            background-color: #e03114;
+            color: #fff;
+            width: 190px;
+            height: 60px;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+    }
+    .field--name-field-contact-address {
+        .country {
+            font-family: "Spline Sans";
+            text-transform: uppercase;
+            font-weight: 500;
+            letter-spacing: -1.7px;
+        }
+        .address-line2 {
+            font-family: "Spline Sans";
+            margin-top: -8px;
+            word-spacing: -1.5px;
+        }
+    }
+    footer {
+        display: none;
+    }
+}
