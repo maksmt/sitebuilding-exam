@@ -1,19 +1,23 @@
 .view-contact-view1 {
-
     .page-header {
         text-transform: uppercase;
         font-size: 40px;
     }
-    .navbar {
-        display: none;
-    }
-    h2 {
-        // font-size: 0;
+    .field--name-title {
+        color: #373645;
+        font-size: 23px;
+        font-family: "Spline Sans";
+        letter-spacing: -1px;
         &::before,
         &::after {
             content: "";
             border: none;
         }
+    }
+    .navbar {
+        display: none;
+    }
+    h2 {
     }
     .address {
         display: flex;
@@ -27,6 +31,24 @@
             font-size: 20px;
             font-weight: 300;
         }
+    }
+    .node__content {
+        .field--name-field-contact-form {
+            margin-top: -47px;
+            margin-left: 160px;
+        }
+        .field--name-field-contact-phones {
+            margin: 10px 0 0 10px;
+        }
+        .field--name-field-contact-email {
+            margin: 10px 0 0 10px;
+        }
+        .gm-style-moc {
+            margin-top: 20px;
+        }
+    }
+    .field--name-field-contact-form {
+        width: 470px;
     }
     form {
         label {
@@ -69,11 +91,17 @@
             text-transform: uppercase;
             font-weight: 500;
             letter-spacing: -1.7px;
+            margin-top: -32px;
+            margin-left: 10px;
         }
+        .address-line1,
         .address-line2 {
             font-family: "Spline Sans";
             margin-top: -8px;
             word-spacing: -1.5px;
+            margin-left: 10px;
+            // margin-top: -5px;
+            // padding-bottom: 5px;
         }
     }
     footer {

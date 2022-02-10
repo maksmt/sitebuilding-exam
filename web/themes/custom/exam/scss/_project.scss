@@ -31,12 +31,8 @@
         }
     }
     &.col-2 {
-        .node__content {
-            .field--name-field-project__service {
-                a {
-                    color: #fff;
-                }
-            }
+        .field--name-field-project__service {
+            color: #fff;
         }
     }
     .img-fluid {
@@ -70,17 +66,12 @@
         position: absolute;
         margin-top: 488px;
         white-space: nowrap;
-        a {
-            &:first-child {
-                color: #21c0a1;
-            }
-            &:nth-child(2) {
-                color: #9c57b6;
-            }
-        }
-        a {
+
+        #block-views-block-project-block-1 {
+            width: 100%;
         }
     }
+
     .pagination {
         display: flex;
         a {
@@ -99,7 +90,32 @@
             }
         }
     }
-    #block-views-block-project-block-1 {
-        width: 100%;
+    .col-1 {
+        .field--name-field-project__service {
+            a {
+                color: #21c0a1;
+            }
+        }
+    }
+    .col-2 {
+        .field--name-field-project__service {
+            a {
+                color: #a264ba;
+            }
+        }
+    }
+    .col-3 {
+        .field--name-field-project__service {
+            a {
+                color: #ea594b;
+            }
+        }
+    }
+    .col-4 {
+        .field--name-field-project__service {
+            a {
+                color: #3ab0e2;
+            }
+        }
     }
 }
